@@ -1,0 +1,13 @@
+<div class="container" (click)="emitClicked(x, y)">
+  <span class="cell">
+    <span *ngIf="stone == 'W'">
+      &#x26AA;
+    </span>
+    <span *ngIf="stone == 'B'">
+      &#x26AB;
+    </span>
+    <span *ngIf="stone == 'E'">
+      &nbsp;
+    </span>
+  </span>
+</div>

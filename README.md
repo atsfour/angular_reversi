@@ -1,27 +1,27 @@
 # AngularReversi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
+リバーシを作ってプログラミングを覚えよう。
 
-## Development server
+描画やクリックの処理は Angular を使って実装されていますが、
+オセロとして遊べるようにするだけであれば、 `models` の中にオセロのルールを実装するだけで動くため、
+Angular の知識がなくてもプログラミングができます。
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 下準備
 
-## Code scaffolding
+このディレクトリに移動し、コマンドラインから `npm install` を実行すると、
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 実行
 
-## Build
+このディレクトリに移動し、コマンドラインから `ng serve` を実行すると、仮想サーバが立ち上がります。
+その後、Chrome などのプラウザで `http://localhost:4200/` にアクセスすると、このプログラムが実行されます。
+コマンドラインで `Ctrl + C` を押すと、仮想サーバが停止します。
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## ユニットテスト
 
-## Running unit tests
+ユニットテストを作ることで、自分が実装したロジックが意図通りに動いているかをチェックすることができます。
+初めのうちは画面を見ながら作ってみるので十分です。
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ユニットテストを書いて実行したいときは、自作のクラスと同じディレクトリに `classname.spec.ts` というファイルを作りましょう。
+コマンドラインから `ng test` を実行すると、その時点で作成済みの `.spec.ts` が全て実行されます。
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+（`models/board.spec.ts` に spec のサンプルがあります。）

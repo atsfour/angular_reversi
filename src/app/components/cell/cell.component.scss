@@ -1,0 +1,18 @@
+.container {
+  display: table-cell;
+  width: 3rem;
+  height: 3rem;
+  font-size: 0rem;
+  text-align: center;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: black;
+  background-color: forestgreen;
+}
+.cell {
+  margin: 0rem;
+  padding: 0.2rem;
+  font-size: 2rem;
+  text-align: center;
+  vertical-align: middle;
+}

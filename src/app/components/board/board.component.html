@@ -1,0 +1,13 @@
+<div>
+  <span *ngFor="let stoneLine of (board$ | async).stoneLines; let y = index">
+    <span *ngFor="let stone of stoneLine; let x = index">
+      <app-cell
+        [stone]="stone"
+        [x]="x"
+        [y]="y"
+        (clicked)="put($event)"
+      ></app-cell>
+    </span>
+    <br />
+  </span>
+</div>
